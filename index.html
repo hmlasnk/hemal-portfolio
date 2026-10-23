@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="description" content="Portfolio of Hemal Swarnasiri, mobile engineer specialising in iOS, Swift, SwiftUI, Android and React Native applications." />
+    <title>Hemal Swarnasiri – Mobile Engineer Portfolio</title>
     <style>
      
 /* Custom styles for the portfolio */
@@ -90,8 +91,60 @@ hr.main {
   border: 2px solid black;
 }
 
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.project-header h2 {
+  margin: 0;
+}
+
+.app-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 22%;
+  border: 1px solid #E0E0E0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
 @media screen and (max-width: 600px) {
   /* Styles for smaller screens */
+  body {
+    padding: 0 16px;
+  }
+
+  .app-icon {
+    width: 56px;
+    height: 56px;
+  }
+
   .container {
     padding: 10px;
   }
@@ -136,15 +189,38 @@ hr.main {
     <h1>My Portfolio - Hemal Swarnasiri</h1>
 <hr class="main"/>
 <!---------------------- BookCabin iOS app ---------------------->
-<h2>BookCabin (iPhone App)</h2>
+<section id="bookcabin">
+<div class="project-header">
+  <img class="app-icon" src="assets/projects/bookcabin/icon.png" alt="BookCabin app icon" width="64" height="64" />
+  <h2>BookCabin (iPhone App)</h2>
+</div>
 <p>
-  <strong>Description:</strong> BookCabin is an all-in-one travel booking app that enables users to search and book flights, hotels, travel packages, activities, and transfers, with integrated Manage My Booking (MMB) and online check-in for all Lion Air Group airline bookings. The app allows travelers to view, modify, and manage reservations and complete essential pre-flight tasks seamlessly from a single mobile platform. 
-  <br />
-  <br />
+  <strong>Description:</strong> BookCabin is an all-in-one travel booking app that enables users to search and book flights, hotels, travel packages, activities, and transfers, with integrated Manage My Booking (MMB) and online check-in for all Lion Air Group airline bookings. The app allows travelers to view, modify, and manage reservations and complete essential pre-flight tasks seamlessly from a single mobile platform.
+</p>
+<p>
  <a href="https://apps.apple.com/us/app/bookcabin/id1538116351" target="_blank">App Store</a>
-  <br/>
-  <br/>
+</p>
+<div class="gallery">
+  <figure>
+    <img src="assets/projects/bookcabin/light/home.png" alt="BookCabin home screen with Flights, Hotels and Check-In shortcuts" width="540" height="1072" loading="lazy" />
+    <figcaption>Home</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/projects/bookcabin/light/flight-search.png" alt="BookCabin flight search form with departure, destination, date and passenger selection" width="540" height="1072" loading="lazy" />
+    <figcaption>Flight Search</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/projects/bookcabin/light/flight-results.png" alt="BookCabin flight results listing departures from Jakarta to Denpasar with fares" width="540" height="1072" loading="lazy" />
+    <figcaption>Flight Results</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/projects/bookcabin/light/check-in.png" alt="BookCabin mobile check-in form with airline, booking code, last name and flight date fields" width="540" height="1072" loading="lazy" />
+    <figcaption>Mobile Check-in</figcaption>
+  </figure>
+</div>
+<p>
   <strong>Role and Responsibility:</strong>
+</p>
   <ul>
     <li>Provided technical leadership and guidance to the team during the rewrite of the legacy BookCabin iOS app, including transition to a new design system and updated API layer.</li>
     <li>Led the revamp of core user journeys, including the Home and Flight Search screens, improving usability and performance.</li>
@@ -152,11 +228,12 @@ hr.main {
     <li>Established and standardized development practices, coding guidelines, and collaboration workflows across the iOS team to improve code quality and delivery efficiency.</li>
     <li>Coordinated cross-functional efforts to align technical implementation with product and operational requirements.</li>
   </ul>
-  <br />
+<p>
   <strong>Technology:</strong>
   <br />
   Swift, SwiftUI, MVVM, Firebase Cloud Messaging (FCM), Alamofire, Google Analytics, Google Tag Manager, SDWebImage, Swift Package Manager (SPM), Core Data.
 </p>
+</section>
 <hr/>
 <!-----------Electronic File Folder ---------------------->
 

@@ -134,6 +134,62 @@ hr.main {
   color: #666;
 }
 
+.gallery-landscape {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Light/Dark screenshot selector: radio buttons, no JavaScript */
+.appearance-switch {
+  display: inline-flex;
+  margin: 24px 0 0;
+  padding: 0;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.appearance-switch legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.appearance-switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.appearance-switch label {
+  padding: 6px 16px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.appearance-switch input:checked + label {
+  background-color: #333;
+  color: #FFF;
+}
+
+.appearance-switch input:focus-visible + label {
+  outline: 2px solid #0066CC;
+  outline-offset: -2px;
+}
+
+.appearance-dark {
+  display: none;
+}
+
+.screenshots:has(.appearance-dark-input:checked) .appearance-light {
+  display: none;
+}
+
+.screenshots:has(.appearance-dark-input:checked) .appearance-dark {
+  display: grid;
+}
+
 @media screen and (max-width: 600px) {
   /* Styles for smaller screens */
   body {
@@ -143,6 +199,10 @@ hr.main {
   .app-icon {
     width: 56px;
     height: 56px;
+  }
+
+  .gallery-landscape {
+    grid-template-columns: 1fr;
   }
 
   .container {
@@ -237,19 +297,69 @@ hr.main {
 <hr/>
 <!-----------Electronic File Folder ---------------------->
 
-<h2>Electronic File Folder (iPad App)</h2>
+<section id="eff">
+<div class="project-header">
+  <img class="app-icon" src="assets/projects/eff/icon.png" alt="Electronic Flight Folder app icon" width="64" height="64" />
+  <h2>Electronic File Folder (iPad App)</h2>
+</div>
 <p>
-  <strong>Description:</strong> Descritiption: EVR is a mobile application designed to digitize and streamline Electronic Voyage Report submissions for flight crew and operational staff. The app enables PIC and/or SIC to create, review, and submit voyage reports efficiently, reducing manual paperwork and improving data accuracy and turnaround time.  
+  <strong>Description:</strong> Descritiption: EVR is a mobile application designed to digitize and streamline Electronic Voyage Report submissions for flight crew and operational staff. The app enables PIC and/or SIC to create, review, and submit voyage reports efficiently, reducing manual paperwork and improving data accuracy and turnaround time.
   <br />
   The application supports offline data entry and synchronization between PIC and SIC devices, allowing reports to be prepared without network connectivity and securely synced once the device is online. It also handles submission constraints (such as time-bound reporting windows) and provides manual submission workflows when standard automated submission is not applicable.
   <br />
   The EVR app focuses on reliability, data integrity, and usability, ensuring critical operational data is captured accurately and submitted in compliance with operational requirements.
-  <br />
-  <br />
+</p>
+<p>
  <u>Distribution: </u>In-House Application
-  <br/>
-  <br/>
+</p>
+<div class="screenshots">
+  <fieldset class="appearance-switch">
+    <legend>Screenshot appearance</legend>
+    <input type="radio" name="eff-appearance" id="eff-light" checked />
+    <label for="eff-light">Light</label>
+    <input type="radio" name="eff-appearance" id="eff-dark" class="appearance-dark-input" />
+    <label for="eff-dark">Dark</label>
+  </fieldset>
+  <div class="gallery gallery-landscape appearance-light">
+    <figure>
+      <img src="assets/projects/eff/light/crew-rosters.png" alt="EFF crew rosters screen in light mode listing the aircraft schedule with flight, EVR and flight plan status" width="1100" height="800" loading="lazy" />
+      <figcaption>Crew Rosters</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/projects/eff/light/evr-flight-fuel.png" alt="EFF Electronic Voyage Report flight and fuel details in light mode" width="1100" height="800" loading="lazy" />
+      <figcaption>EVR – Flight &amp; Fuel</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/projects/eff/light/route-profiles.png" alt="EFF route profile chart in light mode showing available flight levels from Mumbai to Kuala Lumpur" width="1100" height="800" loading="lazy" />
+      <figcaption>Route Profiles</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/projects/eff/light/crew-voyage-report.png" alt="EFF crew voyage report in light mode with crew details redacted" width="1100" height="800" loading="lazy" />
+      <figcaption>Crew Voyage Report</figcaption>
+    </figure>
+  </div>
+  <div class="gallery gallery-landscape appearance-dark">
+    <figure>
+      <img src="assets/projects/eff/dark/crew-rosters.png" alt="EFF crew rosters screen in dark mode listing the aircraft schedule with flight, EVR and flight plan status" width="1100" height="800" loading="lazy" />
+      <figcaption>Crew Rosters</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/projects/eff/dark/evr-flight-fuel.png" alt="EFF Electronic Voyage Report flight and fuel details in dark mode" width="1100" height="800" loading="lazy" />
+      <figcaption>EVR – Flight &amp; Fuel</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/projects/eff/dark/paper-flight-briefing.png" alt="EFF paper flight briefing in dark mode showing the operational flight plan" width="1100" height="800" loading="lazy" />
+      <figcaption>Paper Flight Briefing</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/projects/eff/dark/evr-staff-details.png" alt="EFF Electronic Voyage Report staff details in dark mode with crew details redacted" width="1100" height="800" loading="lazy" />
+      <figcaption>EVR – Staff Details</figcaption>
+    </figure>
+  </div>
+</div>
+<p>
   <strong>Role and Responsibility:</strong>
+</p>
   <ul>
     <li>Took over full technical ownership of an existing EVR mobile application and stabilized critical production workflows.</li>
     <li>Identified root causes in the data synchronization layer and redesigned the sync logic to significantly reduce errors while minimizing impact on existing app functionality.</li>
@@ -260,11 +370,12 @@ hr.main {
     <li>Performed targeted performance and stability optimizations across the app to improve runtime behavior and user experience.</li>
     <li>Acted as the primary technical point of contact for EVR-related issues and improvements.</li>
   </ul>
-  <br />
+<p>
   <strong>Technology:</strong>
   <br />
   Swift, SwiftUI, URLSession, Swift Package Manager (SPM), Document-based local storage, MDM distribution.
 </p>
+</section>
 <hr/>
 <!-----------Batik Air Apps---------------------->
 

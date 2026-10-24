@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Hemal Swarnasiri, mobile engineer specialising in iOS, Swift, SwiftUI, Android and React Native applications." />
-    <title>Hemal Swarnasiri – Mobile Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Hemal Swarnasiri, Principal Mobile Engineer and Mobile Architect with 15+ years of experience in iOS, SwiftUI, React Native and Android." />
+    <title>Hemal Swarnasiri – Principal Mobile Engineer</title>
     <style>
      
 /* Custom styles for the portfolio */
@@ -89,6 +89,69 @@ strong {
 
 hr.main {
   border: 2px solid black;
+}
+
+.intro {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.intro h1 {
+  margin: 0;
+}
+
+.intro .headline {
+  margin: 8px 0 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.intro .summary {
+  max-width: 760px;
+  margin: 20px auto 0;
+}
+
+.section-title {
+  margin: 40px 0 0;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.earlier-project {
+  border-bottom: 1px solid #DDD;
+}
+
+.section-title + .earlier-project {
+  margin-top: 16px;
+  border-top: 1px solid #DDD;
+}
+
+.earlier-project summary {
+  padding: 16px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.earlier-project summary:focus-visible {
+  outline: 2px solid #0066CC;
+  outline-offset: 2px;
+}
+
+.earlier-project[open] {
+  padding-bottom: 16px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 .project-header {
@@ -246,71 +309,30 @@ hr.main {
     </style>
   </head>
   <body>
-    <h1>My Portfolio - Hemal Swarnasiri</h1>
+<header class="intro">
+  <h1>Hemal Swarnasiri</h1>
+  <p class="headline">Principal Mobile Engineer | Mobile Architect | iOS, React Native and Android</p>
+  <p class="summary">Principal Mobile Engineer and Mobile Architect with 15+ years of experience designing, modernising and delivering scalable, production-critical mobile applications, including airline apps with over one million downloads. Experienced in mobile architecture, cross-platform modernisation, offline-first systems, technical strategy and engineering leadership.</p>
+  <nav class="contact-links" aria-label="Contact and profiles">
+    <a href="mailto:hemal.swa@gmail.com">hemal.swa@gmail.com</a>
+    <a href="https://www.linkedin.com/in/hemalasanka" target="_blank">LinkedIn</a>
+    <a href="https://medium.com/@hemalasanka" target="_blank">Medium</a>
+  </nav>
+</header>
 <hr class="main"/>
-<!---------------------- BookCabin iOS app ---------------------->
-<section id="bookcabin">
-<div class="project-header">
-  <img class="app-icon" src="assets/projects/bookcabin/icon.png" alt="BookCabin app icon" width="64" height="64" />
-  <h2>BookCabin (iPhone App)</h2>
-</div>
-<p>
-  <strong>Description:</strong> BookCabin is an all-in-one travel booking app that enables users to search and book flights, hotels, travel packages, activities, and transfers, with integrated Manage My Booking (MMB) and online check-in for all Lion Air Group airline bookings. The app allows travelers to view, modify, and manage reservations and complete essential pre-flight tasks seamlessly from a single mobile platform.
-</p>
-<p>
- <a href="https://apps.apple.com/us/app/bookcabin/id1538116351" target="_blank">App Store</a>
-</p>
-<div class="gallery">
-  <figure>
-    <img src="assets/projects/bookcabin/light/home.png" alt="BookCabin home screen with Flights, Hotels and Check-In shortcuts" width="540" height="1072" loading="lazy" />
-    <figcaption>Home</figcaption>
-  </figure>
-  <figure>
-    <img src="assets/projects/bookcabin/light/flight-search.png" alt="BookCabin flight search form with departure, destination, date and passenger selection" width="540" height="1072" loading="lazy" />
-    <figcaption>Flight Search</figcaption>
-  </figure>
-  <figure>
-    <img src="assets/projects/bookcabin/light/flight-results.png" alt="BookCabin flight results listing departures from Jakarta to Denpasar with fares" width="540" height="1072" loading="lazy" />
-    <figcaption>Flight Results</figcaption>
-  </figure>
-  <figure>
-    <img src="assets/projects/bookcabin/light/check-in.png" alt="BookCabin mobile check-in form with airline, booking code, last name and flight date fields" width="540" height="1072" loading="lazy" />
-    <figcaption>Mobile Check-in</figcaption>
-  </figure>
-</div>
-<p>
-  <strong>Role and Responsibility:</strong>
-</p>
-  <ul>
-    <li>Provided technical leadership and guidance to the team during the rewrite of the legacy BookCabin iOS app, including transition to a new design system and updated API layer.</li>
-    <li>Led the revamp of core user journeys, including the Home and Flight Search screens, improving usability and performance.</li>
-    <li>Designed and implemented the end-to-end Mobile Check-in flow from scratch, collaborating closely with API, UI/UX, and Android teams to ensure feature parity and consistency.</li>
-    <li>Established and standardized development practices, coding guidelines, and collaboration workflows across the iOS team to improve code quality and delivery efficiency.</li>
-    <li>Coordinated cross-functional efforts to align technical implementation with product and operational requirements.</li>
-  </ul>
-<p>
-  <strong>Technology:</strong>
-  <br />
-  Swift, SwiftUI, MVVM, Firebase Cloud Messaging (FCM), Alamofire, Google Analytics, Google Tag Manager, SDWebImage, Swift Package Manager (SPM), Core Data.
-</p>
-</section>
-<hr/>
-<!-----------Electronic File Folder ---------------------->
+<h2 class="section-title">Featured Projects</h2>
+<!-----------Electronic Flight Folder ---------------------->
 
 <section id="eff">
 <div class="project-header">
   <img class="app-icon" src="assets/projects/eff/icon.png" alt="Electronic Flight Folder app icon" width="64" height="64" />
-  <h2>Electronic File Folder (iPad App)</h2>
+  <h2>Electronic Flight Folder (iPad App)</h2>
 </div>
 <p>
-  <strong>Description:</strong> Descritiption: EVR is a mobile application designed to digitize and streamline Electronic Voyage Report submissions for flight crew and operational staff. The app enables PIC and/or SIC to create, review, and submit voyage reports efficiently, reducing manual paperwork and improving data accuracy and turnaround time.
-  <br />
-  The application supports offline data entry and synchronization between PIC and SIC devices, allowing reports to be prepared without network connectivity and securely synced once the device is online. It also handles submission constraints (such as time-bound reporting windows) and provides manual submission workflows when standard automated submission is not applicable.
-  <br />
-  The EVR app focuses on reliability, data integrity, and usability, ensuring critical operational data is captured accurately and submitted in compliance with operational requirements.
+  <strong>Description:</strong> Electronic Flight Folder (EFF) is a mission-critical aviation operations platform built with SwiftUI and C# backend services. It digitises pilot workflows by bringing crew rosters, flight plans, NOTAMs, flight briefings, weather information, and Electronic Voyage Reports (EVR) into a unified iPad application. Designed for offline-first operation, it supports report preparation and synchronisation between Pilot-in-Command (PIC) and Second-in-Command (SIC) devices. Originally developed for Batik Air, the platform has been expanded to five additional Lion Air Group airlines.
 </p>
 <p>
- <u>Distribution: </u>In-House Application
+ <u>Distribution: </u>Unlisted App Store · ABM · MDM
 </p>
 <div class="screenshots">
   <fieldset class="appearance-switch">
@@ -358,87 +380,31 @@ hr.main {
   </div>
 </div>
 <p>
-  <strong>Role and Responsibility:</strong>
+  <strong>My Contribution:</strong>
 </p>
-  <ul>
-    <li>Took over full technical ownership of an existing EVR mobile application and stabilized critical production workflows.</li>
-    <li>Identified root causes in the data synchronization layer and redesigned the sync logic to significantly reduce errors while minimizing impact on existing app functionality.</li>
-    <li>Refactored synchronization workflows to improve data consistency, reliability, and conflict handling between PIC and SIC devices.</li>
-    <li>Introduced structured logging and local log file generation, enabling faster issue diagnosis and clear identification of client-side vs API-side issues.</li>
-    <li>Reduced operational issues reported by pilots by improving error visibility, stability, and edge-case handling.</li>
-    <li>Collaborated closely with backend/API developers, providing recommendations to optimize API contracts and performance.</li>
-    <li>Performed targeted performance and stability optimizations across the app to improve runtime behavior and user experience.</li>
-    <li>Acted as the primary technical point of contact for EVR-related issues and improvements.</li>
-  </ul>
+<ul>
+  <li>Own the end-to-end development and modernisation of the EFF platform, spanning the SwiftUI iPad application and C# backend services, while improving usability and streamlining pilot workflows for a more intuitive aviation-focused experience.</li>
+  <li>Led the platform's expansion from Batik Air to five additional Lion Air Group airlines, managing technical adaptations and deployment readiness.</li>
+  <li>Investigated and resolved critical synchronisation issues, improving data consistency and reliability across PIC and SIC devices.</li>
+  <li>Streamlined release processes and strengthened regression testing and compatibility validation to improve production stability with each release.</li>
+  <li>Introduced structured logging and local log-file generation to accelerate troubleshooting and root-cause analysis.</li>
+</ul>
 <p>
-  <strong>Technology:</strong>
+  <strong>Technology Stack:</strong>
   <br />
-  Swift, SwiftUI, URLSession, Swift Package Manager (SPM), Document-based local storage, MDM distribution.
+  Swift, SwiftUI, SwiftData, URLSession, C#, REST APIs, document-based local storage, Swift Package Manager (SPM), MDM.
 </p>
 </section>
 <hr/>
-<!-----------Batik Air Apps---------------------->
-
-    <section id="batik-air">
-    <div class="project-header">
-      <img class="app-icon" src="assets/projects/batik-air/icon.png" alt="Batik Air app icon" width="64" height="64" />
-      <h2>Batik Air Apps</h2>
-    </div>
-    <p>
-      <strong>Description:</strong> Batik Air mobile application that enables users to search and book flight tickets, manage their bookings, and retrieve past reservations directly from their device. The app provides features to quickly search flights, save favourite passengers for faster booking, and view itinerary details, helping travellers plan and manage their journeys more efficiently.
-    </p>
-    <p>
-      Live Apps:
-       <br />
-       <a href="https://apps.apple.com/ph/app/batik-air/id1038430077" target="_blank">App Store</a>
-       <br />
-       <a href="https://play.google.com/store/apps/details?id=com.goquo.ig.app" target="_blank">Play Store</a>
-    </p>
-    <div class="gallery">
-      <figure>
-        <img src="assets/projects/batik-air/light/home.png" alt="Batik Air home screen with round trip flight search form and popular deals" width="540" height="1072" loading="lazy" />
-        <figcaption>Home</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/projects/batik-air/light/flight-search.png" alt="Batik Air flight search results from Jakarta to Bali with date selector and fares" width="540" height="1072" loading="lazy" />
-        <figcaption>Flight Search</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/projects/batik-air/light/add-ons.png" alt="Batik Air add-ons and baggage selection screen with baggage, meal and snack options" width="540" height="1072" loading="lazy" />
-        <figcaption>Add-ons &amp; Baggage</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/projects/batik-air/light/manage-booking.png" alt="Batik Air Manage My Booking screen with add-ons, change flight, resend ticket and refund options" width="540" height="1072" loading="lazy" />
-        <figcaption>Manage My Booking</figcaption>
-      </figure>
-    </div>
-    <p>
-      <strong>Role and Responsibility:</strong>
-    </p>
-      <ul>
-        <li>Led the partial rewrite of an existing mobile application using React Native, working alongside another developer.</li>
-        <li>Defined the base application setup, including project structure, API integration patterns, and data caching architecture.</li>
-        <li>Evaluated and selected the technology stack and libraries to improve maintainability, performance, and scalability.</li>
-        <li>Took ownership of the Manage My Booking (MMB) flow, including core user journeys and state management.</li>
-        <li>Collaborated with an outsourced development team maintaining the legacy app, providing technical guidance and code-quality improvements.</li>
-        <li>Acted as a bridge between BatikAir QA, product/management, and the outsourced development team, ensuring clear communication and faster issue resolution.</li>
-      </ul>
-    <p>
-      <strong>Technology:</strong>
-      <br />
-      React Native, TypeScript, Redux Toolkit, React Navigation, Firebase Cloud Messaging (FCM), Google Analytics, Axios, React Native Paper, SQlite DB, Azure DevOps CI/CD.
-    </p>
-    </section>
-    <hr/>
 <!-----------Pilot Library---------------------->
 
 <section id="pilot-library">
 <div class="project-header">
   <img class="app-icon" src="assets/projects/pilot-library/icon.png" alt="Pilot Library app icon" width="64" height="64" />
-  <h2>Pilot Library (iPad App)</h2>
+  <h2>Pilot Library (Universal App)</h2>
 </div>
 <p>
-  <strong>Description:</strong> Pilot Library is a native iPad application that gives pilots a single place to organise and read their aircraft documentation. Documents are grouped by aircraft and by category, such as QRH, FCOM, SOP, Checklist and Training, and can be searched, sorted and imported. Pilots can open several documents in tabs, annotate PDFs, bookmark pages and keep handwritten notes, with full support for Light and Dark appearance.
+  <strong>Description:</strong> Pilot Library is a native application for iPhone and iPad that provides pilots with a centralised platform to organise, access, and annotate aircraft documentation. It supports document categorisation by aircraft and type, including QRH, FCOM, SOPs, checklists, and training materials, alongside search, sorting, and document import. Additional capabilities include tabbed document viewing, PDF annotation, page bookmarking, and handwritten note-taking, with support for Light and Dark appearance.
 </p>
 <p>
  <u>Distribution: </u>In-House Application
@@ -505,28 +471,129 @@ hr.main {
   </div>
 </div>
 <p>
-  <strong>Role and Responsibility:</strong>
+  <strong>My Contribution:</strong>
 </p>
 <ul>
-  <li>Built the application from scratch as the sole developer.</li>
-  <li>Handled all planning, UI/UX design and application architecture.</li>
+  <li>Designed and developed the application from scratch as the sole developer, owning the entire development lifecycle from planning and UI/UX design to architecture and implementation.</li>
+  <li>Built document management and viewing capabilities using SwiftUI and SwiftData, with PencilKit integration for handwritten notes and annotation workflows.</li>
 </ul>
 <p>
-  <strong>Technology:</strong>
+  <strong>Technology Stack:</strong>
   <br />
-  Swift, SwiftUI, SwiftData.
+  Swift, SwiftUI, SwiftData, PencilKit.
 </p>
 </section>
 <hr/>
-<!---------------------- EzyCommerce iOS and Android Apps ---------------------->
-    <h2>EzyCommerce iOS and Android Apps</h2>
+<!-----------Batik Air Apps---------------------->
+
+    <section id="batik-air">
+    <div class="project-header">
+      <img class="app-icon" src="assets/projects/batik-air/icon.png" alt="Batik Air app icon" width="64" height="64" />
+      <h2>Batik Air (Universal App)</h2>
+    </div>
     <p>
-      <strong>Description:</strong> As part of Sabre Airline Solutions, I contributed to the development of EzyCommerce, native iOS and Android mobile applications used by several clients including Nok Air, Sky Express, Avelo, and others. This application allows users to book flights, check-in, save boarding passes, and view past bookings, recieve push notifications, all in a user-friendly interface.
+      <strong>Description:</strong> The Batik Air mobile application enables travellers to search and book flights, manage existing reservations, and retrieve past bookings directly from their devices. It provides essential travel features, including flight search, passenger profile management for faster bookings, and itinerary access. The application is part of a mobile platform modernisation initiative focused on establishing a scalable, maintainable cross-platform foundation using React Native and TypeScript.
+    </p>
+    <p>
+      Live Apps:
+       <br />
+       <a href="https://apps.apple.com/ph/app/batik-air/id1038430077" target="_blank">App Store</a>
+       <br />
+       <a href="https://play.google.com/store/apps/details?id=com.goquo.ig.app" target="_blank">Play Store</a>
+    </p>
+    <div class="gallery">
+      <figure>
+        <img src="assets/projects/batik-air/light/home.png" alt="Batik Air home screen with round trip flight search form and popular deals" width="540" height="1072" loading="lazy" />
+        <figcaption>Home</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/projects/batik-air/light/flight-search.png" alt="Batik Air flight search results from Jakarta to Bali with date selector and fares" width="540" height="1072" loading="lazy" />
+        <figcaption>Flight Search</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/projects/batik-air/light/add-ons.png" alt="Batik Air add-ons and baggage selection screen with baggage, meal and snack options" width="540" height="1072" loading="lazy" />
+        <figcaption>Add-ons &amp; Baggage</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/projects/batik-air/light/manage-booking.png" alt="Batik Air Manage My Booking screen with add-ons, change flight, resend ticket and refund options" width="540" height="1072" loading="lazy" />
+        <figcaption>Manage My Booking</figcaption>
+      </figure>
+    </div>
+    <p>
+      <strong>My Contribution:</strong>
+    </p>
+    <ul>
+      <li>Led the rewrite of the Batik Air and Thai Lion Air mobile applications, serving over one million downloads, using React Native and TypeScript, establishing the architecture and technical direction for future development.</li>
+      <li>Defined the application foundation, including project structure, API integration patterns, and data caching architecture, and selected technologies to support maintainability and scalability.</li>
+      <li>Owned the Manage My Booking (MMB) flow, including core user journeys and state management.</li>
+      <li>Provided technical guidance and code-quality improvements in collaboration with the outsourced team maintaining the legacy application.</li>
+      <li>Coordinated technical communication between Batik Air QA, product and management stakeholders, and the outsourced development team to support issue resolution and delivery.</li>
+    </ul>
+    <p>
+      <strong>Technology Stack:</strong>
+      <br />
+      React Native, TypeScript, Redux Toolkit, React Navigation, Axios, React Native Paper, SQLite, Firebase Cloud Messaging (FCM), Google Analytics, Azure DevOps CI/CD.
+    </p>
+    </section>
+    <hr/>
+<!---------------------- BookCabin iOS app ---------------------->
+<section id="bookcabin">
+<div class="project-header">
+  <img class="app-icon" src="assets/projects/bookcabin/icon.png" alt="BookCabin app icon" width="64" height="64" />
+  <h2>BookCabin (iPhone App)</h2>
+</div>
+<p>
+  <strong>Description:</strong> BookCabin is an all-in-one travel booking application that enables users to search and book flights, hotels, travel packages, activities, and transfers. It integrates Manage My Booking (MMB) and online check-in for Lion Air Group airline bookings, allowing travellers to manage reservations, modify itineraries, and complete essential pre-flight tasks through a single mobile platform.
+</p>
+<p>
+ <a href="https://apps.apple.com/us/app/bookcabin/id1538116351" target="_blank">App Store</a>
+</p>
+<div class="gallery">
+  <figure>
+    <img src="assets/projects/bookcabin/light/home.png" alt="BookCabin home screen with Flights, Hotels and Check-In shortcuts" width="540" height="1072" loading="lazy" />
+    <figcaption>Home</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/projects/bookcabin/light/flight-search.png" alt="BookCabin flight search form with departure, destination, date and passenger selection" width="540" height="1072" loading="lazy" />
+    <figcaption>Flight Search</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/projects/bookcabin/light/flight-results.png" alt="BookCabin flight results listing departures from Jakarta to Denpasar with fares" width="540" height="1072" loading="lazy" />
+    <figcaption>Flight Results</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/projects/bookcabin/light/check-in.png" alt="BookCabin mobile check-in form with airline, booking code, last name and flight date fields" width="540" height="1072" loading="lazy" />
+    <figcaption>Mobile Check-in</figcaption>
+  </figure>
+</div>
+<p>
+  <strong>My Contribution:</strong>
+</p>
+<ul>
+  <li>Provided technical leadership during the modernisation of the legacy iOS application, guiding the transition to a new design system and updated API layer.</li>
+  <li>Led the revamp of core user journeys, including the Home and Flight Search screens, improving usability and application performance.</li>
+  <li>Designed and implemented the end-to-end mobile check-in flow from scratch, collaborating with API, UI/UX, and Android teams to maintain feature consistency across platforms.</li>
+  <li>Established coding guidelines, development practices, and collaboration workflows to improve code quality and delivery efficiency across the iOS team.</li>
+  <li>Coordinated with cross-functional stakeholders to align technical implementation with product requirements and operational needs.</li>
+</ul>
+<p>
+  <strong>Technology Stack:</strong>
+  <br />
+  Swift, SwiftUI, MVVM, Alamofire, Core Data, Firebase Cloud Messaging (FCM), Google Analytics, Google Tag Manager, SDWebImage, Swift Package Manager (SPM).
+</p>
+</section>
+<hr/>
+<h2 class="section-title">Earlier Projects</h2>
+<!---------------------- EzyCommerce iOS and Android Apps ---------------------->
+    <details class="earlier-project">
+    <summary>EzyCommerce iOS and Android Apps</summary>
+    <p>
+      <strong>Description:</strong> As part of Sabre Airline Solutions, I contributed to the development of EzyCommerce, native iOS and Android mobile applications used by several clients including Nok Air, Sky Express, Avelo, and others. This application allows users to book flights, check-in, save boarding passes, and view past bookings, receive push notifications, all in a user-friendly interface.
       <br />
       <br />
-      This is several clients for our mobile product:
+      These are several clients of our mobile product:
       <br />
-      Nok Air, Sky Express, BermudAir, Avelo, Iberojet, Aero_K, AirChoiceOne, Arajet, Cambodia Angkkor Air, Canada Jetlines, Eastern, JetSuit, LynxAir, MyAirline, Wingo, ZipAir, Mango.
+      Nok Air, Sky Express, BermudAir, Avelo, Iberojet, Aero_K, AirChoiceOne, Arajet, Cambodia Angkor Air, Canada Jetlines, Eastern, JetSuit, LynxAir, MyAirline, Wingo, ZipAir, Mango.
       <br/>
       <br />
       Here are live apps for few clients:
@@ -548,16 +615,17 @@ hr.main {
       <br />
       <strong>Technology:</strong>
       <br />
-      <u>iOS App:</u> Swift as programing language, Storyboard and SwiftUI for UI, Core Data as ORM, Almofire for network request, Firebase cloud messaging, Google Analytics, Firebase remote config, Communication with webview, Apple wallet integration, Salesforce Marketing Cloud integration, Support Localization, GitHub as Source control, Bitrise as CI/CD, TestFlight for beta app distribution, Support deep linking, CocoaPods as dependency management, Support both iPhone and iPad, Support for Dark mode.
+      <u>iOS App:</u> Swift as programming language, Storyboard and SwiftUI for UI, Core Data as ORM, Alamofire for network request, Firebase cloud messaging, Google Analytics, Firebase remote config, Communication with webview, Apple wallet integration, Salesforce Marketing Cloud integration, Support Localization, GitHub as Source control, Bitrise as CI/CD, TestFlight for beta app distribution, Support deep linking, CocoaPods as dependency management, Support both iPhone and iPad, Support for Dark mode.
       <br />
       <br />
-      <u>Android App:</u> Java and Kotlin as programing languages, SQLite, Retrofit for network request, Firebase cloud messaging, Google Analytics, Firebase remote config, Communication with webview, Salesforce Marketing Cloud integration, Support Localization, GitHub as Source control, Bitrise as CI/CD, Firebase App Distribution for app testing, Crashlytics as crash reporting tool, Support deep linking.
+      <u>Android App:</u> Java and Kotlin as programming languages, SQLite, Retrofit for network request, Firebase cloud messaging, Google Analytics, Firebase remote config, Communication with webview, Salesforce Marketing Cloud integration, Support Localization, GitHub as Source control, Bitrise as CI/CD, Firebase App Distribution for app testing, Crashlytics as crash reporting tool, Support deep linking.
     </p>
 
-  <hr/>
+  </details>
 <!-----------DX React Native Apps for iOS and Android apps---------------------->
 
-    <h2>DX React Native Apps for iOS and Android apps</h2>
+    <details class="earlier-project">
+    <summary>DX React Native Apps for iOS and Android apps</summary>
     <p>
       <strong>Description:</strong> As part of my previous role, I worked on DX, a React Native application product for Sabre. The app allows users to book flights, check-in, and view past bookings.
       <br />
@@ -578,12 +646,13 @@ hr.main {
       <br />
       <strong>Technology:</strong>
       <br />
-      React Native, React native paper for UI component library, GraphQL, AppDynamics, Firebase cloud messaging, GitLab as Source control, Team City and App center as CI/CD, FastLane, Support for iPad, iPhone, Android Phones and Android tablets.
+      React Native, React native paper for UI component library, GraphQL, AppDynamics, Firebase cloud messaging, GitLab as Source control, TeamCity and App Center as CI/CD, Fastlane, Support for iPad, iPhone, Android Phones and Android tablets.
     </p>
-    <hr/>
+    </details>
  <!-----------98 Training---------------------->
 
-<h2>98 Training (React Native App)</h2>
+<details class="earlier-project">
+<summary>98 Training (React Native App)</summary>
 <p>
   <strong>Description:</strong> 98 Training offers high-quality fitness programs designed to help users reach and surpass their goals. With expert coaching, a movement library, and a strong community, the app provides a range of programs for strength, endurance, and no-equipment training, along with valuable training and nutrition insights.
   <br />
@@ -604,11 +673,12 @@ hr.main {
   <br />
   React Native, TypeScript, In-App Purchase, Firebase Cloud Messaging, Stripe for payments, Support for iPad, iPhone, Android phones, and Android tablets.
 </p>
-<hr/>
+</details>
 
     <!-----------NumSystem---------------------->
 
-<h2>Number System (React Native App)</h2>
+<details class="earlier-project">
+<summary>Number System (React Native App)</summary>
 <p>
   <strong>Description:</strong> This application can be used to convert any number between Binary, Octal, Decimal, and Hexadecimal, catering to students, developers, and math enthusiasts alike. Witness the magic of instant transformations as you effortlessly switch between numeral bases.
   <br />
@@ -625,10 +695,11 @@ hr.main {
   <br />
   React Native, Typescript, React native paper as UI component library, localize for Sinhala and English languages, Google AdMob, Support for iPad, iPhone, Android Phones and Android tablets.
 </p>
-<hr/>
+</details>
 <!-----------WeFix---------------------->
 
-<h2>WeFix (iPhone App)</h2>
+<details class="earlier-project">
+<summary>WeFix (iPhone App)</summary>
 <p>
   <strong>Description:</strong> APS Lanka (Pvt.) Ltd is a leading contractor for electrical, mechanical, plumbing, instrumentation and etc… building services within the Sri Lanka, Maldives, Seychelles and etc. The company provides a complete contracting service including design, procurement, installation, project management, and commissioning and facilities management services to meet specific client requirements. 
   This mobile application is offering to their customers which providing convenient and fast of making service request and do the payments via mobile application.  
@@ -644,14 +715,15 @@ hr.main {
   <br />
   <strong>Technology:</strong>
   <br />
-  Swift as programing language, Storyboard, Alamofire, Firebase for push notifications, Google Map, Google places, SDWebImage.
+  Swift as programming language, Storyboard, Alamofire, Firebase for push notifications, Google Map, Google places, SDWebImage.
 </p>
-<hr/>
+</details>
 <!-----------Different---------------------->
 
-<h2>:Different Tenant (iPhone App)</h2>
+<details class="earlier-project">
+<summary>:Different Tenant (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>The tenant application simplifies property management for tenants living in properties managed by Different. With this app, tenants can conveniently pay rent, submit maintenance requests, sign important tenancy documents, and easily get in touch with Different.
+  <strong>Description:</strong> The tenant application simplifies property management for tenants living in properties managed by Different. With this app, tenants can conveniently pay rent, submit maintenance requests, sign important tenancy documents, and easily get in touch with Different.
   <br />
   <br />
  <a href="https://apps.apple.com/lk/app/different-for-tenants/id1559165207" target="_blank">App Store</a>
@@ -659,7 +731,7 @@ hr.main {
   <br/>
   <strong>Role and Responsibility:</strong>
   <ul>
-    <li>Developed and launched the initial iOS Tenant app from scratch, including all features and functionality for first phrase.</li>
+    <li>Developed and launched the initial iOS Tenant app from scratch, including all features and functionality for the first phase.</li>
     <li>Collaborated with clients to gather requirements and ensure that their needs were met in the app.</li>
     <li>Took full ownership of the iOS application, including development, testing, and deployment.</li>
     <li>Ensured high-quality and maintainable code through code reviews and adherence to industry best practices.</li>
@@ -667,17 +739,18 @@ hr.main {
   <br />
   <strong>Technology:</strong>
   <br />
-  Swift as programing language, Stroryboard for UI, Almofire for network request, Intercom as messaging platform, Stripe for payments.
+  Swift as programming language, Storyboard for UI, Alamofire for network request, Intercom as messaging platform, Stripe for payments.
 </p>
-<hr/>
+</details>
      <!-----------RSA (iPhone App)---------------------->
 
-<h2>RSA (iPhone App)</h2>
+<details class="earlier-project">
+<summary>RSA (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>RSA is a dedicated roadside assistance service serving customers in Sri Lanka. This mobile application was specifically designed to cater to their clientele. In the event of issues like tire punctures, breakdowns, or running out of gas while driving, customers can swiftly connect with RSA assistance through this app. The app facilitates the assignment of a technician to the customer's location, allowing real-time tracking of the technician's arrival on a map.
+  <strong>Description:</strong> RSA is a dedicated roadside assistance service serving customers in Sri Lanka. This mobile application was specifically designed to cater to their clientele. In the event of issues like tire punctures, breakdowns, or running out of gas while driving, customers can swiftly connect with RSA assistance through this app. The app facilitates the assignment of a technician to the customer's location, allowing real-time tracking of the technician's arrival on a map.
   <br />
   <br />
-  <u>Status: </u>Currently it's not active in Appstore
+  <u>Status: </u>Currently it's not active in App Store
   <br/>
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -687,17 +760,18 @@ hr.main {
   <br />
   <strong>Technology:</strong>
   <br />
-  Swift as programing language, Storyboard, Alamofire, Firebase for push notifications, MapKit, Core location service, Core Animation
+  Swift as programming language, Storyboard, Alamofire, Firebase for push notifications, MapKit, Core location service, Core Animation
 </p>
-<hr/>
+</details>
     <!-----------Chamba---------------------->
 
-<h2>Chamba (iPhone App)</h2>
+<details class="earlier-project">
+<summary>Chamba (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>Chamba is a job search application designed to simplify the job search process for job seekers. The app's powerful backend allows admins to post hot jobs from the backend, while job seekers can register and set their job preferences to receive personalized job recommendations.
+  <strong>Description:</strong> Chamba is a job search application designed to simplify the job search process for job seekers. The app's powerful backend allows admins to post hot jobs from the backend, while job seekers can register and set their job preferences to receive personalized job recommendations.
   <br />
   <br />
-  <u>Status: </u>Currently it's not active in Appstore
+  <u>Status: </u>Currently it's not active in App Store
   <br/>
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -710,17 +784,18 @@ hr.main {
   <br />
   <strong>Technology:</strong>
   <br />
-  Swift as programing language, Stroryboard for UI, Almofire for network request, Support localization, Facebook SDK for login and job sharing, branch.io for deep linking.
+  Swift as programming language, Storyboard for UI, Alamofire for network request, Support localization, Facebook SDK for login and job sharing, branch.io for deep linking.
 </p>
-<hr/>
+</details>
      <!-----------The Barnesbury---------------------->
 
-<h2>The Barnesbury (iPhone app)</h2>
+<details class="earlier-project">
+<summary>The Barnesbury (iPhone app)</summary>
 <p>
-  <strong>Description:</strong>The Barnesbury App offers a seamless dining experience at their restaurant. Say goodbye to cumbersome printed menus – simply open the app, place your order, and their attentive staff will ensure customers favorite dishes are promptly served. Designed with user convenience in mind, the app also allows customers to place delivery orders or schedule pickups at your convenience. By becoming a loyal customer, customers can enjoy exclusive benefits, including discounts and complimentary treats.
+  <strong>Description:</strong> The Barnesbury App offers a seamless dining experience at their restaurant. Say goodbye to cumbersome printed menus – simply open the app, place your order, and their attentive staff will ensure customers favorite dishes are promptly served. Designed with user convenience in mind, the app also allows customers to place delivery orders or schedule pickups at your convenience. By becoming a loyal customer, customers can enjoy exclusive benefits, including discounts and complimentary treats.
   <br />
   <br />
-  <u>Status: </u>Currently it's not active in Appstore
+  <u>Status: </u>Currently it's not active in App Store
   <br/>
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -731,17 +806,18 @@ hr.main {
   <br />
   <strong>Technology:</strong>
   <br />
-  Swift as programing language, Stroryboard for UI, Almofire for network request, Support localization, Facebook SDK for login and job sharing, branch.io for deep linking.
+  Swift as programming language, Storyboard for UI, Alamofire for network request, Support localization, Facebook SDK for login and job sharing, branch.io for deep linking.
 </p>
-<hr/>
+</details>
 <!-----------NightClubHub---------------------->
 
-<h2>NightClubHub (iPhone App)</h2>
+<details class="earlier-project">
+<summary>NightClubHub (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>This mobile application provides users with easy access to the latest special events at nightclubs across the United States. With the app, users can view upcoming events, book tables as guests, and make payments directly through the application.
+  <strong>Description:</strong> This mobile application provides users with easy access to the latest special events at nightclubs across the United States. With the app, users can view upcoming events, book tables as guests, and make payments directly through the application.
   <br />
   <br />
-  <u>Status: </u>Currently it's not active in Appstore
+  <u>Status: </u>Currently it's not active in App Store
   <br/>
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -752,15 +828,16 @@ hr.main {
   <br />
   <strong>Technology:</strong>
   <br />
-Swift as programing language, Storyboard, Alamofire, Firebase for push notifications, Core location service, Core Animation.
+Swift as programming language, Storyboard, Alamofire, Firebase for push notifications, Core location service, Core Animation.
 </p>
 
-<hr/>
+</details>
 <!-----------CameraPlus---------------------->
 
-<h2>CameraPlus (iPhone App)</h2>
+<details class="earlier-project">
+<summary>CameraPlus (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>This mobile application provides a simple and convenient way for iOS and Android users to share photos with each other without the need for an internet connection. Users can simply take a photo with their device and share it with another device via a direct, wireless connection.
+  <strong>Description:</strong> This mobile application provides a simple and convenient way for iOS and Android users to share photos with each other without the need for an internet connection. Users can simply take a photo with their device and share it with another device via a direct, wireless connection.
   <br />
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -771,14 +848,15 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Swift as programing language, Storyboard for UI, Facebook SDK integration to login and get friend list, Bonjour for transfer files in WIFI network, Core Data.
+  Swift as programming language, Storyboard for UI, Facebook SDK integration to login and get friend list, Bonjour for transferring files over a Wi-Fi network, Core Data.
 </p>
-<hr/>
+</details>
 <!-----------FoodieHound (iPhone App)---------------------->
 
-<h2>FoodieHound (iPhone App)</h2>
+<details class="earlier-project">
+<summary>FoodieHound (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>FoodieHound is a social media application designed for food lovers. With FoodieHound, users can check in to restaurants and share details about their meal, including descriptions and images. The app also allows users to search for delicious meals, find nearby restaurants, add followers, and suggest meals to friends. Whether you're a foodie looking for new culinary experiences or simply want to share your favorite meals with others, FoodieHound is the perfect app for you.
+  <strong>Description:</strong> FoodieHound is a social media application designed for food lovers. With FoodieHound, users can check in to restaurants and share details about their meal, including descriptions and images. The app also allows users to search for delicious meals, find nearby restaurants, add followers, and suggest meals to friends. Whether you're a foodie looking for new culinary experiences or simply want to share your favorite meals with others, FoodieHound is the perfect app for you.
   <br />
   <br/>
   <a href="http://www.solistech.com/Portfolio/FoodiehoundMobile" target="_blank">More Info</a>
@@ -794,17 +872,18 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, Storyboard for UI, Facebook SDK integration to login share and get friend list, AFNetworking for API calls, Core location for get location.
+  Objective-C as programming language, Storyboard for UI, Facebook SDK integration to login share and get friend list, AFNetworking for API calls, Core location for get location.
 </p>
-<hr/>
+</details>
 <!-----------TryItOn ---------------------->
 
-<h2>TryItOn (iPhone App)</h2>
+<details class="earlier-project">
+<summary>TryItOn (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>TryItOn is a mobile application that allows users to try on jewelry from the comfort of their mobile device. The app provides a personalized and interactive experience where users can see how necklaces look on them using their own photos or model images. Users can also share their favorite pieces on social media platforms such as Twitter and Facebook to show off their unique jewelry style to their friends and family.
+  <strong>Description:</strong> TryItOn is a mobile application that allows users to try on jewelry from the comfort of their mobile device. The app provides a personalized and interactive experience where users can see how necklaces look on them using their own photos or model images. Users can also share their favorite pieces on social media platforms such as Twitter and Facebook to show off their unique jewelry style to their friends and family.
   <br />
   <br />
-  <u>Status: </u>Currently it's not active in Appstore
+  <u>Status: </u>Currently it's not active in App Store
   <br/>
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -815,15 +894,16 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, Storyboard for UI, AFNetworking for API calls, Core Data, Gestures
+  Objective-C as programming language, Storyboard for UI, AFNetworking for API calls, Core Data, Gestures
 </p>
-<hr/>
+</details>
 
 <!-----------Front Row Sales Pro ---------------------->
 
-<h2>Front Row Sales Pro (Universal iOS app)</h2>
+<details class="earlier-project">
+<summary>Front Row Sales Pro (Universal iOS app)</summary>
 <p>
-  <strong>Description:</strong>Front Row is a sales reporting tool that enables real-time tracking of sales performance for both management and sales representatives. The application provides a unique Sales Productivity, Accountability and Management system that provides instant insights into sales performance at any given moment. With Front Row, both management and sales representatives can stay on top of their sales targets, quickly identify opportunities for growth, and take action to maximize sales productivity.
+  <strong>Description:</strong> Front Row is a sales reporting tool that enables real-time tracking of sales performance for both management and sales representatives. The application provides a unique Sales Productivity, Accountability and Management system that provides instant insights into sales performance at any given moment. With Front Row, both management and sales representatives can stay on top of their sales targets, quickly identify opportunities for growth, and take action to maximize sales productivity.
   <br />
   <br />
   <a href="https://itunes.apple.com/lk/app/front-row-sales-pro/id422104541" target="_blank">App Store</a>
@@ -838,12 +918,13 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, AFNetworking for API calls, Core Data
+  Objective-C as programming language, XIB, AFNetworking for API calls, Core Data
 </p>
-<hr/>
+</details>
     <!-----------AHPClaims---------------------->
 
-<h2>AHPClaims (iOS Universal app) </h2>
+<details class="earlier-project">
+<summary>AHPClaims (iOS Universal app)</summary>
 <p>
   <strong>Description:</strong>"Behavioral Health Solutions" is a company dedicated to providing the patient-doctor relationship in United state. The AHPClaims iOS app was developed to support their mission. This application streamlines the process of managing patient appointments and attendance while leveraging Google services for data retrieval from Google Spreadsheets, appointment scheduling on Google Calendar, and secure billing photo uploads to Google Drive.
   <br />
@@ -860,14 +941,15 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core Data, Integrated Google Services SDK for authentication, data retrieval from Google Spreadsheets, event creation in Google Calendar, and secure photo uploads to Google Drive
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core Data, Integrated Google Services SDK for authentication, data retrieval from Google Spreadsheets, event creation in Google Calendar, and secure photo uploads to Google Drive
 </p>
-<hr/>
+</details>
 <!-----------BoardPAC---------------------->
 
-<h2>BoardPAC (iPad App)</h2>
+<details class="earlier-project">
+<summary>BoardPAC (iPad App)</summary>
 <p>
-  <strong>Description:</strong>BoardPAC is an effective way for Board Directors to access the Board & Committee Papers and supplementary information directly to their iPad device. This solution enables efficient secure access to the Company Corporate Board Papers. The platform has the collaboration enabled for quick decision-making through a collaborative approach. All comments and feedback are available for view by the recipient stakeholders.
+  <strong>Description:</strong> BoardPAC is an effective way for Board Directors to access the Board & Committee Papers and supplementary information directly to their iPad device. This solution enables efficient secure access to the Company Corporate Board Papers. The platform has the collaboration enabled for quick decision-making through a collaborative approach. All comments and feedback are available for view by the recipient stakeholders.
   <br />
   <br />
   <a href="https://apps.apple.com/us/app/boardpac/id1030673077" target="_blank">App Store</a>
@@ -882,15 +964,16 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, AjiPDF for PDF annotation library, AFNetworking for API calls, FMDB for access SQLite database, Localization
+  Objective-C as programming language, XIB, AjiPDF for PDF annotation library, AFNetworking for API calls, FMDB for access SQLite database, Localization
 </p>
-<hr/>
+</details>
 
 <!-----------Warranty Pal---------------------->
 
-<h2>Warranty Pal (Universal App)</h2>
+<details class="earlier-project">
+<summary>Warranty Pal (Universal App)</summary>
 <p>
-  <strong>Description:</strong>This application allows users to store warranty bills as images and track purchased items with their respective warranty periods. It provides an easy way to manage items and check their warranty status. All data is securely backed up on the user's iCloud account.
+  <strong>Description:</strong> This application allows users to store warranty bills as images and track purchased items with their respective warranty periods. It provides an easy way to manage items and check their warranty status. All data is securely backed up on the user's iCloud account.
   <br />
   <br />
   <a href="https://www.fexcon.com.au/warranty-pal-our-products.php" target="_blank">More Info</a>
@@ -906,35 +989,37 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core data, ZBarSDK, Facebook SDK, Sync database and images with iCloud
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core data, ZBarSDK, Facebook SDK, Sync database and images with iCloud
 </p>
-<hr/>
+</details>
 <!-----------HomePoolSafety---------------------->
 
-<h2>HomePoolSafety (Universal App)</h2>
+<details class="earlier-project">
+<summary>HomePoolSafety (Universal App)</summary>
 <p>
-  <strong>Description:</strong>Application ensures your home swimming pool is safe with Royal Life Saving’s PoolSafety app – an interactive checklist for your home swimming pool. The comprehensive checklist covers the Swimming Pool Gate, Swimming Pool Fence, Around the swimming pool fence, Supervision, Pool Equipment, Emergency Preparation, Chemicals and Electricity. 
+  <strong>Description:</strong> Application ensures your home swimming pool is safe with Royal Life Saving’s PoolSafety app – an interactive checklist for your home swimming pool. The comprehensive checklist covers the Swimming Pool Gate, Swimming Pool Fence, Around the swimming pool fence, Supervision, Pool Equipment, Emergency Preparation, Chemicals and Electricity. 
   <br />
   <br />
-  <u>Status: </u>Currently it's not active in Appstore
+  <u>Status: </u>Currently it's not active in App Store
   <br/>
   <br/>
   <strong>Role and Responsibility:</strong>
   <ul>
     <li>Collaborated with senior developer to implement new features and resolve issues in the mobile application.</li>
-    <li>Tested, debugged and enhannced the application to ensure stability and functionality.</li>
+    <li>Tested, debugged and enhanced the application to ensure stability and functionality.</li>
   </ul>
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core data, Sync database and images with iCloud
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core data, Sync database and images with iCloud
 </p>
-<hr/>
+</details>
   <!-----------AHIMS---------------------->
 
-<h2>AHIMS Site Recording (iPhone App)</h2>
+<details class="earlier-project">
+<summary>AHIMS Site Recording (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>The AHIMS Site Recording app, developed for the NSW Office of Environment and Heritage, is a powerful tool designed to streamline the recording of Aboriginal objects, ceremonial sites, and spiritual landmarks collectively referred to as Aboriginal Sites in New South Wales. Tailored for cultural heritage professionals and Aboriginal communities, this app simplifies site management by automating tasks, ensuring data accuracy, and allowing direct submissions to the Office of Environment and Heritage, ultimately enhancing the preservation of NSW's culturally significant heritage.
+  <strong>Description:</strong> The AHIMS Site Recording app, developed for the NSW Office of Environment and Heritage, is a powerful tool designed to streamline the recording of Aboriginal objects, ceremonial sites, and spiritual landmarks collectively referred to as Aboriginal Sites in New South Wales. Tailored for cultural heritage professionals and Aboriginal communities, this app simplifies site management by automating tasks, ensuring data accuracy, and allowing direct submissions to the Office of Environment and Heritage, ultimately enhancing the preservation of NSW's culturally significant heritage.
   <br />
   <br />
   <a href="https://www.fexcon.com.au/ahims.php" target="_blank">More Info</a>
@@ -943,19 +1028,20 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <strong>Role and Responsibility:</strong>
   <ul>
     <li>Collaborated with Senior developer to implement new features and resolve issues in the mobile application.</li>
-    <li>Tested, debugged and enhannced the application stability and seamless performance.</li>
+    <li>Tested, debugged and enhanced the application stability and seamless performance.</li>
   </ul>
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core data, Core location service, Core Data. Camera API
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core Data, Core location service, Camera API
 </p>
-<hr/>
+</details>
 <!-----------BarBait---------------------->
 
-<h2>BarBait (iPhone App)</h2>
+<details class="earlier-project">
+<summary>BarBait (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>The BarDeals app is a location-based mobile application designed to help users find the best deals on drinks and cocktails in Melbourne. With the app, users can access exclusive deals at the hottest bars in the city, without having to carry around bulky discount books. The app uses GPS technology to locate users on a map and display participating bars and their deals in the vicinity. Users can save deals for later or redeem them immediately at the bar. The app aims to provide an easy and convenient way for users to discover new bars and save money on their favorite drinks.
+  <strong>Description:</strong> The BarDeals app is a location-based mobile application designed to help users find the best deals on drinks and cocktails in Melbourne. With the app, users can access exclusive deals at the hottest bars in the city, without having to carry around bulky discount books. The app uses GPS technology to locate users on a map and display participating bars and their deals in the vicinity. Users can save deals for later or redeem them immediately at the bar. The app aims to provide an easy and convenient way for users to discover new bars and save money on their favorite drinks.
   <br />
   <br />
   <a href="https://www.fexcon.com.au/barbait.php" target="_blank">More Info</a>
@@ -969,14 +1055,15 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core data, Core location framework, Facebook SDK
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core data, Core location framework, Facebook SDK
 </p>
-<hr/>
+</details>
     <!-----------HomeScene---------------------->
 
-<h2>HomeScene (Universal iOS App)</h2>
+<details class="earlier-project">
+<summary>HomeScene (Universal iOS App)</summary>
 <p>
-  <strong>Description:</strong>: HomeScene is mobile application catalogue advertising providing a medium specifically designed at targeting homeowners. Incorporating only like-minded businesses, HomeScene presents a great cost effective opportunity to promote customers business throughout the Brisbane, GOLD Coast and Sunshine Coast markets. The HomeScene app lets customers to shop seamlessly to our valued clients’ websites, get exclusive mobile offers, real-time alerts and find your nearest store.
+  <strong>Description:</strong> HomeScene is mobile application catalogue advertising providing a medium specifically designed at targeting homeowners. Incorporating only like-minded businesses, HomeScene presents a great cost effective opportunity to promote customers business throughout the Brisbane, GOLD Coast and Sunshine Coast markets. The HomeScene app lets customers to shop seamlessly to our valued clients’ websites, get exclusive mobile offers, real-time alerts and find your nearest store.
   <br />
   <br />
   <a href="https://www.fexcon.com.au/homescene.php" target="_blank">More Info</a>
@@ -985,19 +1072,20 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <strong>Role and Responsibility:</strong>
   <ul>
     <li>Redesign existing application according to new design.</li>
-    <li>Tested, debugged and enhannced the application stability and seamless performance.</li>
+    <li>Tested, debugged and enhanced the application stability and seamless performance.</li>
   </ul>
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core location service
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core location service
 </p>
-<hr/>
+</details>
 <!-----------Jota---------------------->
 
-<h2>Jota (iPhone App)</h2>
+<details class="earlier-project">
+<summary>Jota (iPhone App)</summary>
 <p>
-  <strong>Description:</strong>This application is designed to support courier service deliverymen in their daily tasks. With this application, deliverymen can easily access client information and track package deliveries. Once the delivery is complete, the deliveryman can obtain the client's signature and record it in the main database, ensuring accurate and timely delivery information. This application streamlines the delivery process and ensures efficient communication between deliverymen and clients.
+  <strong>Description:</strong> This application is designed to support courier service deliverymen in their daily tasks. With this application, deliverymen can easily access client information and track package deliveries. Once the delivery is complete, the deliveryman can obtain the client's signature and record it in the main database, ensuring accurate and timely delivery information. This application streamlines the delivery process and ensures efficient communication between deliverymen and clients.
   <br />
   <br />
   <a href="https://www.fexcon.com.au/jota.php" target="_blank">More Info</a>
@@ -1011,14 +1099,15 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <strong>Technology:</strong>
   <br />
-  Objective-C as programing language, XIB, ASIHTTPRequest for API calls, Core data, Core location framework, Core graphics framework
+  Objective-C as programming language, XIB, ASIHTTPRequest for API calls, Core data, Core location framework, Core graphics framework
 </p>
-<hr/>
+</details>
 <!-----------TMS---------------------->
 
-<h2>Employee Time Management System (BQuTMS-Universal app and WPF Desktop application)</h2>
+<details class="earlier-project">
+<summary>Employee Time Management System (BQuTMS-Universal app and WPF Desktop application)</summary>
 <p>
-  <strong>Description:</strong>This is comprehensive HRM system (Client, Web and Mobile (iPhone and android)) for recode and view Attendance, Computer inactivity monitoring, Recode day to day work, Leave request, Leave management for Employees.
+  <strong>Description:</strong> This is comprehensive HRM system (Client, Web and Mobile (iPhone and android)) to record and view Attendance, Computer inactivity monitoring, Record day-to-day work, Leave request, Leave management for Employees.
   <br />
   <br/>
   <strong>Role and Responsibility:</strong>
@@ -1036,7 +1125,7 @@ Swift as programing language, Storyboard, Alamofire, Firebase for push notificat
   <br />
   <br />
 </p>
-  <hr/>
+  </details>
 <!-----------My publications---------------------->
 <h2>My Publications</h2>
 <p>
